@@ -22,6 +22,8 @@ async function connectDB() {
     }
 }
 
+connectDB();
+
 
 const express = require('express');
 const app = express();
