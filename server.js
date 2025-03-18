@@ -16,8 +16,9 @@ async function connectDB() {
           const container = database.container(containerId);
 
           console.log("✅ Connected to Cosmos DB!");
+
     } catch (error) {
-        
+         console.error("❌ Error connecting to Cosmos DB:", error);
     }
 }
 
