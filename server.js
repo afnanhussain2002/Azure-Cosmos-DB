@@ -9,6 +9,10 @@ const containerId =process.env.CONTAINER_ID;
 
 const client = new CosmosClient({ endpoint, key });
 
+async function connectDB() {
+    
+}
+
 
 const express = require('express');
 const app = express();
