@@ -1,6 +1,13 @@
 require('dotenv').config();
 const { CosmosClient } = require("@azure/cosmos");
 
+// Replace with your Cosmos DB credentials
+const endpoint = process.env.COSMOS_DB_ENDPOINT;
+const key = process.env.COSMOS_DB_PRIMARY_KEY;
+const databaseId = process.env.DATABASE_ID;
+const containerId =process.env.CONTAINER_ID;
+
+
 const express = require('express');
 const app = express();
 
