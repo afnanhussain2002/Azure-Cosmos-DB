@@ -11,7 +11,9 @@ const client = new CosmosClient({ endpoint, key });
 
 async function connectDB() {
     try {
-        
+          // Access database & container
+          const database = client.database(databaseId);
+          const container = database.container(containerId);
     } catch (error) {
         
     }
