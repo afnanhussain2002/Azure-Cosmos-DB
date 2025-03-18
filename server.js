@@ -7,6 +7,8 @@ const key = process.env.COSMOS_DB_PRIMARY_KEY;
 const databaseId = process.env.DATABASE_ID;
 const containerId =process.env.CONTAINER_ID;
 
+const client = new CosmosClient({ endpoint, key });
+
 
 const express = require('express');
 const app = express();
