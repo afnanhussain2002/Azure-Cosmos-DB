@@ -1,4 +1,5 @@
 require('dotenv').config();
+const { CosmosClient } = require("@azure/cosmos");
 
 const express = require('express');
 const app = express();
