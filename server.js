@@ -17,6 +17,15 @@ async function connectDB() {
 
           console.log("✅ Connected to Cosmos DB!");
 
+            // Insert a test document
+        const { resource: newItem } = await container.items.create({
+            id: "1",
+            name: "Test Item",
+            category: "Example"
+        });
+
+        console.log("✅ Document Inserted:", newItem);
+
     } catch (error) {
          console.error("❌ Error connecting to Cosmos DB:", error);
     }
